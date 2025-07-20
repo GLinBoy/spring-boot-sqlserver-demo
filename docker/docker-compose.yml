@@ -1,5 +1,5 @@
 version: '3.8'
-
+name: spring-boot-sqlserver-demo
 services:
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
