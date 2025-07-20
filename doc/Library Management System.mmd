@@ -1,0 +1,44 @@
+erDiagram
+    BOOK ||--o{ AUTHOR : written_by
+    BOOK ||--|| PUBLISHER : published_by
+    BOOK }o--o{ CATEGORY : belongs_to
+    AUTHOR ||--o{ BOOK : writes
+    PUBLISHER ||--o{ BOOK : publishes
+    CATEGORY }o--o{ BOOK : contains
+
+    BOOK {
+        bigint id PK
+        varchar title
+        varchar isbn
+        date publication_date
+        bigint publisher_id FK
+    }
+
+    AUTHOR {
+        bigint id PK
+        varchar first_name
+        varchar last_name
+        date birth_date
+    }
+
+    PUBLISHER {
+        bigint id PK
+        varchar name
+        varchar address
+    }
+
+    CATEGORY {
+        bigint id PK
+        varchar name
+        varchar description
+    }
+
+    BOOK_AUTHOR {
+        bigint book_id PK,FK
+        bigint author_id PK,FK
+    }
+
+    BOOK_CATEGORY {
+        bigint book_id PK,FK
+        bigint category_id PK,FK
+    }
