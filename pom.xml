@@ -120,13 +120,13 @@
 				<artifactId>editorconfig-maven-plugin</artifactId>
 				<version>${editorconfig-maven-plugin.version}</version>
 				<executions>
-				<execution>
-					<id>check</id>
-					<phase>validate</phase>
-					<goals>
-					<goal>check</goal>
-					</goals>
-				</execution>
+					<execution>
+						<id>check</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
 				</executions>
 			</plugin>
 		</plugins>
