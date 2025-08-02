@@ -482,3 +482,10 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,java,maven,visualstudiocode,vim,emacs,intellij,intellij+all,intellij+iml,netbeans
 
+# Logs directories - keep the directories but ignore all files within them
+logs/*
+!logs/.gitkeep
+!logs/crashes/
+logs/crashes/*
+!logs/crashes/.gitkeep
+
